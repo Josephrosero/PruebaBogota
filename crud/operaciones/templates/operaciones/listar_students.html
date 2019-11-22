@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>listar studiantes</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>  ID </td>
+        <td>   NAME </td>
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for student in student%}
+    <tr>
+
+
+    <td>{{student.id}}  </td>
+    <td> {{student.name}} </td>
+
+</tr>
+    {% endfor%}
+    </tbody>
+</table>
+</body>
+</html>

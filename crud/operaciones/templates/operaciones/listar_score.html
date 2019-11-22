@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>listar score</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>  ID </td>
+        <td>   NAME </td>
+        <td>  ID PROFESSOR </td>
+        <td>   ID STUDENT</td>
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for score in score%}
+    <tr>
+
+
+    <td>{{score.id}}  </td>
+    <td> {{score.name}} </td>
+        <td>{{score.professor}}  </td>
+    <td> {{score.student}} </td>
+
+</tr>
+    {% endfor%}
+    </tbody>
+</table>
+</body>
+</html>

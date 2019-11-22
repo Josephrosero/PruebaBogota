@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>listar professor</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>  ID </td>
+        <td>   NAME </td>
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for professor in professor%}
+    <tr>
+
+
+    <td>{{professor.id}}  </td>
+    <td> {{professor.name}} </td>
+
+</tr>
+    {% endfor%}
+    </tbody>
+</body>
+</html>

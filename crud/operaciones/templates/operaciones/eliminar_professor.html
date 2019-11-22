@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar profesor</title>
+</head>
+<body>
+<form action="" method="post">
+
+    {% csrf_token%}
+    <h1>estas seguro de eliminar el object {{professor.name }}</h1>
+    <BUTTON type="submit"> Eliminar </BUTTON>
+    <BUTTON> <a  href="{% url 'index'%}"> </a> cancelar</BUTTON>
+</form>
+</body>
+</html>
